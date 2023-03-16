@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* Printing to standard output using puts() */
 
 int main(void)
 {
