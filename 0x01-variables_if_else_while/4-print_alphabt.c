@@ -6,15 +6,16 @@
 int main(void)
 {
 	int alphabet = 'a';
-	while (alphabet < 'z')
-       	{	
+
+	while (alphabet <= 'z')
+	{
 		if (alphabet == 'e' || alphabet == 'q')
 		{
 			alphabet++;
 			continue;
 		}
 		putchar(alphabet);
-		alphabet++;	
+		alphabet++;
 	}
 	putchar(10);
 	return (0);
