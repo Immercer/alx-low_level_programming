@@ -5,9 +5,17 @@
  */
 int main(void)
 {
-	int alphabet;
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	int alphabet = 'a';
+	while (alphabet < 'z')
+       	{	
+		if (alphabet == 'e' || alphabet == 'q')
+		{
+			alphabet++;
+			continue;
+		}
 		putchar(alphabet);
+		alphabet++;	
+	}
 	putchar(10);
 	return (0);
 }
