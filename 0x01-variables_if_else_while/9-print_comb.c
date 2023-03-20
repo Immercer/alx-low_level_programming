@@ -10,8 +10,11 @@ int main(void)
 	for (ch = 10 ; ch <= 19; ch++)
 	{
 		putchar((ch % 10) + '0');
-		putchar(',');
-		putchar(' ');
+		if (ch != 19)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar(10);
 	return (0);
