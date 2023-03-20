@@ -9,7 +9,7 @@ int main(void)
 
 	for (ch = 10 ; ch <= 19; ch++)
 	{
-		putchar((ch % 10) + '0' );
+		putchar((ch % 10) + '0');
 		putchar(',');
 		putchar(' ');
 	}
