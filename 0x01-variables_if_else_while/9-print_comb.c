@@ -5,18 +5,13 @@
  */
 int main(void)
 {
-	int var_num;
-	int const_num;
+	int ch;
 
-	for (var_num = 48; var_num <= 57; var_num++)
+	for (ch = 10 ; ch <= 19; ch++)
 	{
-		for (const_num = 48; const_num <= 57; const_num++)
-		{
-			putchar(var_num);
-			putchar(const_num);
-			putchar(44);
-		}
+		putchar((ch % 10) + '0' );
+		putchar(',');
+		putchar(' ');
 	}
 	putchar(10);
-	return (0);
 }
