@@ -12,5 +12,12 @@ int print_last_digit(int n)
 	else
 		n = n;
 	n = (n % 10);
+	_putchar('0' + n);
 	return (n);
+}
+
+int main(void)
+{
+	_putchar('0' + print_last_digit(-98));
+	return (0);
 }
