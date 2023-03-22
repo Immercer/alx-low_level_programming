@@ -21,8 +21,10 @@ void times_table(void)
 				_putchar(ln + '0');
 			}
 			else
+			{
 				_putchar(multiple + '0');
-				_putcahr(' ');
+				_putchar(' ');
+			}
 			if (j != 9)
 			{
 				_putchar(',');
