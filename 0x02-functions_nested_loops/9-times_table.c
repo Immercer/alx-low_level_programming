@@ -20,7 +20,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(fn + '0');
-				_putchar(ln + '0');		
+				_putchar(ln + '0');
 			}
 			else
 			{
@@ -35,9 +35,4 @@ void times_table(void)
 		}
 		_putchar(10);
 	}
-}
-
-int main()
-{
-	times_table();
 }
