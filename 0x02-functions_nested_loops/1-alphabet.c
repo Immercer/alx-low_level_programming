@@ -1,9 +1,13 @@
 #include <stdio.h>
+#include "main.h"
 /**
- * main - entry point
- * Return: Always 0
+ * print_alphabet - Print alphabets in lowercase using _putchar()
  */
 void print_alphabet(void)
 {
-	_putchar("a");
+	int i;
+
+	for (i = 'a'; i <= 'z'; i++)
+		_putchar(i);
+	_putchar(10);
 }
