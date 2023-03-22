@@ -17,25 +17,27 @@ void times_table(void)
 			{
 				ln = multiple % 10;
 				fn = (multiple - ln) / 10;
+				_putchar(',');
+				_putchar(' ');
 				_putchar(fn + '0');
-				_putchar(ln + '0');
-				if (j != 9)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
+				_putchar(ln + '0');		
 			}
 			else
 			{
-				_putchar(multiple + '0');
-				if (j != 9)
+				if (j != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 				}
+				_putchar(multiple + '0');
 			}
 		}
 		_putchar(10);
 	}
+}
+
+int main()
+{
+	times_table();
 }
