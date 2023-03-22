@@ -16,8 +16,3 @@ int print_last_digit(int n)
 	return (n);
 }
 
-int main(void)
-{
-	_putchar('0' + print_last_digit(-98));
-	return (0);
-}
