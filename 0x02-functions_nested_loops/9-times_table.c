@@ -19,16 +19,21 @@ void times_table(void)
 				fn = (multiple - ln) / 10;
 				_putchar(fn + '0');
 				_putchar(ln + '0');
+				if (j != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
 			{
 				_putchar(multiple + '0');
-				_putchar(' ');
-			}
-			if (j != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
+				if (j != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar(10);
