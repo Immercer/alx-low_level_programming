@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * more_numbers - print t0 0 to 14 to times
