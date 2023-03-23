@@ -4,7 +4,7 @@
  */
 void more_numbers(void)
 {
-	int fn, ln;
+	int fn;
 	int c = 0;
 	int i = 0;
 
@@ -14,13 +14,10 @@ void more_numbers(void)
 		{
 			if (i >= 10)
 			{
-				ln = i % 10;
-				fn = (i - ln) / 10;
+				fn = (i) / 10;
 				_putchar(fn + '0');
-				_putchar(ln + '0');
 			}
-			else
-			_putchar(i + '0');
+			_putchar((i % 10) + '0');
 		}
 		_putchar(10);
 	}
