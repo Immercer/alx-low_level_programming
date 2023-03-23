@@ -4,7 +4,9 @@
  */
 void more_numbers(void)
 {
-	int fn, ln, c, i;
+	int fn, ln;
+	int c = 0;
+	int i = 0;
 
 	for (c = 1; c <= 10 ; c++)
 	{
