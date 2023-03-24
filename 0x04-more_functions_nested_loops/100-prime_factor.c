@@ -2,38 +2,28 @@
 #include <stdbool.h>
 /**
  * main - entry point
- * is_prime: prime numbers
- * Return: true or false
- * @num: integer
+ * Return: 0
  */
-bool is_prime(long long num)
-{
-	if (num < 2)
-		return (false);
-	for (long long i = 2; i * i <= num; i++)
-	{
-		if (num % i == 0)
-			return (false);
-	}
-	return (true);
-}
-
 int main(void)
 {
-	long long n = 612852475143;
-	long long largest_factor = 0;
+	long prime = 612852475143, div;
 
-	for (long long i = 2; i * i <= n; i++)
+	while (div < (prime / 2))
 	{
-		if (n % i == 0)
+		if ((prime % 2) == 0)
 		{
-			if (is_prime(i))
-				largest_factor = i;
-		if (is_prime(n / i))
-			largest_factor = (n / i);
+			prime /= 2;
+			continue;
+		}
+
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
+				prime /= div;
 		}
 	}
-	printf("%lld\n", largest_factor);
+
+	printf("%ld\n", prime);
+
 	return (0);
 }
-
