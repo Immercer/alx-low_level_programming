@@ -36,11 +36,11 @@ int largest_number(int a, int b, int c)
 		{
 			if (b > c)
 				largest = b;
-			else if (a > c)
+			if (a > c)
 				largest = a;
-			else
-				largest = c;
 		}
+		else
+			largest = c;
 	}
 
 return (largest);
