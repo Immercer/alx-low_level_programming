@@ -32,17 +32,35 @@ int largest_number(int a, int b, int c)
 		else
 			largest = b;
 	}
-	else
+	else if (c >= a || c >= b)
 	{
-		if (c >= a || c >= b)
-		{
-			if (b > c)
-				largest = b;
-			if (a > c)
-				largest = a;
-		}
+		if (b > c)
+			largest = b;
+		if (a > c)
+			largest = a;
 		else
 			largest = c;
+	}
+	else if (a == b)
+	{
+		if (a > c)
+			largest = a;
+		else
+			largest = c;
+	}
+	else if (b == c)
+	{
+		if (b > a)
+			largest = b;
+		else
+			largest = a;
+	}
+	else if (c == a)
+	{
+		if (c > b)
+			largest = c;
+		else
+			largest = b;
 	}
 
 return (largest);
