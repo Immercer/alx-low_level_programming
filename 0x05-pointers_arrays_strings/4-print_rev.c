@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <string.h>
 /**
  * print_rev - prints a string in reverse
  * @s: poniter to string variables
@@ -30,13 +29,4 @@ void print_rev(char *s)
 		counter--;
 	}
 	_putchar(10);
-}
-
-int main(void)
-{
-    char *str;
-
-    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-    print_rev(str);
-    return (0);
 }
