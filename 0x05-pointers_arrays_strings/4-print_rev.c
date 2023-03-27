@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _strlen -  count lenght of string
- * print_rev: prints a string in reverse
+ * _strlen - length of string
  * Return: length
  * @s: poniter to string variables
  */
@@ -20,6 +19,10 @@ int _strlen(char *s)
 	return (c);
 }
 
+/**
+ * print_rev - print string in reverse
+ * @s: string variable
+ */
 void print_rev(char *s)
 {
 	int len, counter;
