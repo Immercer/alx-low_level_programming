@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_rev - prints a string in reverse
+ * _strlen -  count lenght of string
+ * print_rev: prints a string in reverse
+ * Return: length
  * @s: poniter to string variables
  */
 
@@ -23,8 +25,8 @@ void print_rev(char *s)
 	int len, counter;
 
 	len = _strlen(s);
-	counter = len;
-	while (counter > 0)
+	counter = len - 1;
+	while (counter >= 0)
 	{
 		_putchar(s[counter]);
 		counter--;
