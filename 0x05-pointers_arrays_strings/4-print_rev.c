@@ -6,15 +6,16 @@
  */
 
 int _strlen(char *s)
-{	
+{
 	int i = 0;
 	int c = 0;
+
 	while (s[i] != '\0')
 	{
 		c++;
 		i++;
 	}
-	return c;
+	return (c);
 }
 
 void print_rev(char *s)
@@ -23,7 +24,7 @@ void print_rev(char *s)
 
 	len = _strlen(s);
 	counter = len;
-	while (counter >= 0)
+	while (counter > 0)
 	{
 		_putchar(s[counter]);
 		counter--;
