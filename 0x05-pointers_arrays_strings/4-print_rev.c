@@ -6,6 +6,18 @@
  * @s: poniter to string variables
  */
 
+int _strlen(char *s)
+{	
+	int i = 0;
+	int c = 0;
+	while (s[i] != '\0')
+	{
+		c++;
+		i++;
+	}
+	return c;
+}
+
 void print_rev(char *s)
 {
 	int len, counter;
@@ -18,4 +30,13 @@ void print_rev(char *s)
 		counter--;
 	}
 	_putchar(10);
+}
+
+int main(void)
+{
+    char *str;
+
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    print_rev(str);
+    return (0);
 }
