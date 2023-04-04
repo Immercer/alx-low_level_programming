@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _strspn - searches for the first occurence of a character in a string
@@ -10,7 +9,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int match = 0;
 	int i = 0;
-	int j = 0;
+	int j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
