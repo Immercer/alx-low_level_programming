@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.h"
+i#include "main.h"
 /**
  * _memset - fills memory with a constant byte
  * @s: memory location pointed to
@@ -17,7 +16,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 		for (i = 0; i < size; i++)
 			*(s + i) = b;
-
-		return (s);
 	}
+
+	return (s);
 }
