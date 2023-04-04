@@ -18,7 +18,7 @@ char *_strpbrk(char *s, char *accept)
 		while (accept[j] != '\0')
 		{
 			if (accept[j] == s[i])
-			{	
+			{
 				s = &s[i];
 				return (s);
 			}
