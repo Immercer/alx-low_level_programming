@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strspn - searches for the first occurence of a character in a string
  * @s: string to search
