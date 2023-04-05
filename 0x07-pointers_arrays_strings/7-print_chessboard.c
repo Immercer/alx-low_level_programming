@@ -1,17 +1,19 @@
 #include "main.h"
+
 /**
  * print_chessboard - print chessboard
  * @a: parameter
  */
+
 void print_chessboard(char (*a)[8])
 {
 
-	int row;
-	int column;
+	int i;
+	int j;
 
-	for (row = 0; row < 8; row++)
+	for (i = 0; i < 8; i++)
 	{
-		for (column = 0; column < 8; column++)
+		for (j = 0; j < 8; j++)
 			_putchar(a[row][column]);
 		_putchar('\n');
 	}
