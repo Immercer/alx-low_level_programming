@@ -20,21 +20,32 @@ int check_palindrome(char *s, int left, int right)
 }
 
 /**
+ * _len - find length of string
+ * @string: target string
+ * Return: number
+ */
+
+int _len(char *string)
+{
+	int counter = 0;
+
+	for (int i = 0; string[i] != '\0'; i++)
+		counter += 1;
+	return (counter);
+}
+
+/**
  * is_palindrome - determines if a string is a palindrome
  * @s: target string
- * Return: 1 or 0
+ * Return: 0 or 1
  */
 
 int is_palindrome(char *s)
 {
-	int len = 0;
+	int length = _len(s) - 1;
 
-	while (s[len] != '\0')/**finding length of string*/
-		len++;
-	int i = len - 1;
-
-	if (i == 0 || i == 1)
+	if (length == 0 || length == 1)
 		return (1);
 	else
-		return (check_palindrome(s, 0, i));
+		return (check_palindrome(s, 0, length));
 }
