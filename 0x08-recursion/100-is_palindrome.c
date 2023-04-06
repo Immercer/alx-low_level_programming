@@ -3,24 +3,23 @@
 
 /**
  * check_palindrome - check for string palindrome
- * @s: target string
  * @left: left index
  * @right: right index
  * Return: 0 or 1
  */
 
-int check_palindrome(char *s, int left, int right)
+int check_palindrome(char *left, char *right)
 {
 	if (left >= right)
 		return (1);
-	if (s[left] != s[right])
-		return (0);
-	if (s[left] == s[right])
-		return (check_palindrome(s, left + 1, right - 1));
+	if (*left == *right)
+		return (check_palindrome(left + 1, right - 1));
+
+	return (0);
 }
 
 /**
- * _len - find length of string
+ * _len - find (length of string
  * @string: target string
  * Return: number
  */
@@ -28,8 +27,9 @@ int check_palindrome(char *s, int left, int right)
 int _len(char *string)
 {
 	int counter = 0;
+	int i = 0;
 
-	for (int i = 0; string[i] != '\0'; i++)
+	for (; string[i] != '\0'; i++)
 		counter += 1;
 	return (counter);
 }
@@ -44,8 +44,5 @@ int is_palindrome(char *s)
 {
 	int length = _len(s) - 1;
 
-	if (length == 0 || length == 1)
-		return (1);
-	else
-		return (check_palindrome(s, 0, length));
+	return (check_palindrome(s, (s + length)));
 }
