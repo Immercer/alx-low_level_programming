@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * find_prime: uses recursion to determine if a number greater than 1 is prime
+ * find_prime - uses recursion to determine if a number greater than 1 is prime
  * @n : target number
  * Return: 0 if number is not prime or 1 if number is prime
  */
