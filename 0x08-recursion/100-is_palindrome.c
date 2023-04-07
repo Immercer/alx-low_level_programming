@@ -20,18 +20,16 @@ int check_palindrome(char *left, char *right)
 
 /**
  * _len - find (length of string
- * @string: target string
+ * @ptr: target string
  * Return: number
  */
 
-int _len(char *string)
+int _len(char *ptr)
 {
-	int counter = 0;
-	int i = 0;
-
-	for (; string[i] != '\0'; i++)
-		counter += 1;
-	return (counter);
+	if (*ptr == '\0')
+		return (0);
+	ptr++;
+	return (1 + _len(ptr));
 }
 
 /**
