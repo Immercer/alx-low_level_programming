@@ -36,6 +36,9 @@ char *_strdup(char *str)
 		return (NULL);
 
 	arr = malloc(sizeof(char) * _len(str) + 1);
+	if (arr ==NULL)
+		return (0);
+
 	for (i = 0; i < _len(str); i++)
 	{
 		arr[i] = str[i];
