@@ -26,6 +26,8 @@ int _len(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
+	if (s1 == s2)
+		return (0);
 	int a = 0;
 	int i, j;
 	char *arr;
