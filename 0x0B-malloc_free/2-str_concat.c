@@ -33,8 +33,28 @@ char *str_concat(char *s1, char *s2)
 	int i, j;
 	char *arr;
 
-	if (s1 == NULL || s2 == NULL)
-		return (0);
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
+	if (s1 == NULL)
+	{
+		arr = malloc(sizeof(char) * (_len(s2) + 1));
+		if (arr == NULL)
+			return (NULL);
+		for (i = 0; i <= _len(s2); i++)
+			arr[i] = s2[i];
+		return (arr);
+	}
+
+	if (s2 == NULL)
+	{
+		arr = malloc(sizeof(char) * (_len(s1) + 1));
+		if (arr == NULL)
+			return (NULL);
+		for (i = 0; i <= _len(s1); i++)
+			arr[i] = s1[i];
+		return (arr);
+	}
+
 	arr = malloc(sizeof(char) * (_len(s1) + _len(s2) + 1));
 
 	if (arr == NULL)
@@ -50,5 +70,3 @@ char *str_concat(char *s1, char *s2)
 	}
 	return (arr);
 }
-
-
