@@ -8,9 +8,6 @@
  */
 int _len(char *s)
 {
-	if (s == NULL)
-		return (0);
-
 	int i = 0;
 	int len = 0;
 
