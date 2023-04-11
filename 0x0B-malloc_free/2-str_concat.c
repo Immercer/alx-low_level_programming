@@ -11,6 +11,9 @@ int _len(char *s)
 	int i = 0;
 	int len = 0;
 
+	if (s == NULL)
+		return (0);
+
 	for (; s[i] != '\0'; i++)
 		len++;
 
@@ -25,7 +28,7 @@ int _len(char *s)
 */
 
 char *str_concat(char *s1, char *s2)
-{		
+{
 	int a = 0;
 	int i, j;
 	char *arr;
