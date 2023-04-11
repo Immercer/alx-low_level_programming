@@ -26,7 +26,7 @@ int _len(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
-	if (s1 == s2)
+	if (s1 == NULL || s2 == NULL)
 		return (0);
 	int a = 0;
 	int i, j;
@@ -47,3 +47,5 @@ char *str_concat(char *s1, char *s2)
 	}
 	return (arr);
 }
+
+
