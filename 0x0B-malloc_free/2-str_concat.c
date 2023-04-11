@@ -25,13 +25,13 @@ int _len(char *s)
 */
 
 char *str_concat(char *s1, char *s2)
-{
-	if (s1 == NULL || s2 == NULL)
-		return (0);
+{		
 	int a = 0;
 	int i, j;
 	char *arr;
 
+	if (s1 == NULL || s2 == NULL)
+		return (0);
 	arr = malloc(sizeof(char) * (_len(s1) + _len(s2) + 1));
 
 	if (arr == NULL)
