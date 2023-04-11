@@ -8,6 +8,9 @@
  */
 int _len(char *s)
 {
+	if (s == NULL)
+		return (0);
+
 	int i = 0;
 	int len = 0;
 
@@ -26,6 +29,9 @@ int _len(char *s)
 
 char *str_concat(char *s1, char *s2)
 {
+	if (s1 == NULL || s2 == NULL)
+		return (0);
+
 	int a = 0;
 	int i, j;
 	char *arr;
