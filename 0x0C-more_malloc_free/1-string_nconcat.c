@@ -12,7 +12,7 @@ int _strlen(char *string)
 {
 	int i = 0;
 
-	for (; string[i] != '\0'; i++)	
+	for (; string[i] != '\0'; i++)
 		;
 	return (i);
 }
@@ -21,7 +21,7 @@ int _strlen(char *string)
  * string_nconcat - concatenates two strings
  * @s1: string 1
  * @s2: string 2
- * @n: 
+ * @n: size
  * Return: concatenated string
  */
 
