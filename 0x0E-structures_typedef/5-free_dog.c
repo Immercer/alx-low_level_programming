@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <srdlib.h>
+#include <stdlib.h>
 #include "dog.h"
 
 /**
