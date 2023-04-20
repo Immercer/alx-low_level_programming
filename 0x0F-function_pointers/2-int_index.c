@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * int_index - seachers for an integer
  * @array: target array
@@ -15,7 +17,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size; i++)
 		if (cmp(*(array + i)))
-			return (i)
+			return (i);
 
-	return (-1)
+	return (-1);
 }
