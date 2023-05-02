@@ -8,7 +8,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int num_elems = 0;
+	size_t num_elems = 0;
 	const listint_t *current_node = h;
 
 	if (current_node == NULL)
