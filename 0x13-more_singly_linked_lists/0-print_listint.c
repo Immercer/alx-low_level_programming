@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <stddef.h>
-#include <stddef.h>
 #include "lists.h"
 
 /**
@@ -12,7 +9,9 @@ size_t print_listint(const listint_t *h)
 {
 	size_t num_elem = 0;
 	const listint_t *current_node = h;
-
+	
+	if (current_node == NULL)
+		return (0);
 	while (current_node != NULL)
 	{
 		printf("%d\n", current_node->n);
