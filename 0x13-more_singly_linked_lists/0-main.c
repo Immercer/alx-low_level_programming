@@ -3,7 +3,7 @@ julien@ubuntu:~/0x13. More singly linked lists$ cat 0-main.c
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
+#include <stddef.h>
 /**
  * main - check the code
  * 
