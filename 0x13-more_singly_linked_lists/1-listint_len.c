@@ -11,9 +11,7 @@ size_t listint_len(const listint_t *h)
 	size_t num_elems = 0;
 	const listint_t *current_node = h;
 
-	if (current_node == NULL)
-		return (0);
-	while (current_node->next != NULL)
+	while (current_node != NULL)
 	{
 		num_elems++;
 		current_node = current_node->next;
