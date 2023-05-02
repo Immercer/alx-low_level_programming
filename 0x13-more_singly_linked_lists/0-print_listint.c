@@ -20,7 +20,6 @@ size_t print_listint(const listint_t *h)
 		num_elem++;
 		current_node = current_node->next;
 	}
-	
 	return (num_elem);
 }
 
