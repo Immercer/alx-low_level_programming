@@ -19,7 +19,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		current_idx++;
 		current_node = current_node->next;
 	}
-	if (current_node == NULL && index > current_idx)
+	if (current_node == NULL && (int)index > current_idx)
 		return (NULL);
 	return (current_node);
 }
