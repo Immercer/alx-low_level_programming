@@ -10,7 +10,7 @@ void free_listint(listint_t *head)
 	listint_t *current_node = NULL;
 
 	if (head == NULL)
-		return (NULL);
+		return;
 	while (head != NULL)
 	{
 		current_node = head;
