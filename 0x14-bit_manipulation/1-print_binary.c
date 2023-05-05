@@ -6,7 +6,6 @@
  */
 void print_binary(unsigned long int n)
 {
-	
 	unsigned long int mask = 1, chk = n;
 	int count = 0;
 	int i = 0;
@@ -20,11 +19,9 @@ void print_binary(unsigned long int n)
 	count -= 1;
 
 	if (count > 0)
-	{
 		mask = mask << count;
-	}
 
-	for (; i <= count; i++)
+	for (; mask > 0; mask >>= 1)
 	{
 		bit = n & mask ? '1' : '0';
 		_putchar(bit);
