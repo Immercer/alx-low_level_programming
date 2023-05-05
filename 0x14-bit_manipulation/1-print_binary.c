@@ -6,14 +6,15 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1;
+	
+	unsigned long int mask = 1, chk = n;
 	int count = 0;
 	int i = 0;
 	int bit = 0;
 
-	while (n)
+	while (chk)
 	{
-		n >>= 1;
+		chk >>= 1;
 		count += 1;
 	}
 	count -= 1;
