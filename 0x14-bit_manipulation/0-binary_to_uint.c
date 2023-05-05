@@ -8,12 +8,12 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
-		return (0);
-
 	unsigned int converted = 0;
 	int idx = 0;
 	int power = 1;
+
+	if (b == NULL)
+		return (0);
 
 	while (b[idx] != '\0')
 		idx += 1;
