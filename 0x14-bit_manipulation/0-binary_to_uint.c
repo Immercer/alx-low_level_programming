@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[idx] != '0' || b[idx] != '1')
 			return (0);
 
-		converted = converted << 1 | b[idx] - '0';
+		converted = converted << 1 | (b[idx] - '0');
 		idx++;
 	}
 	return (converted);
